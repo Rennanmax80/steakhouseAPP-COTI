@@ -16,7 +16,7 @@ class Header extends React.Component {
         />
         <Appbar.Action
           icon="cart-outline"
-          onPress={() => this.props.navigation.navigate('shoppingCart')}
+          onPress={() => this.props.navigation.navigate('ShoppingCart')}
         />
       </Appbar.Header>
     );
