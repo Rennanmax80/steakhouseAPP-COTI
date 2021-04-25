@@ -13,11 +13,13 @@ import {Provider} from 'react-redux';
 //importando o REDUCER (componente do react-redux que irá acessar
 //e incluir ou modificar dados na STORE (memoria do app))
 import shoppingCartReducer from './reducers/shoppingCartReducer';
+import clienteReducer from './reducers/clienteReducer';
 
 //registrar o reducer
 //NOME_DO_REDUCER : componente REDUCER
 const rootReducer = combineReducers({
   shoppingCart: shoppingCartReducer,
+  cliente: clienteReducer,
 });
 
 //criando a memoria da aplicação(STORE)

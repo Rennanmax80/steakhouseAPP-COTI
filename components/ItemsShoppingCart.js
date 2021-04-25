@@ -69,7 +69,11 @@ class ItemsShoppingCart extends React.Component {
                         </View>
 
                         <View style={{ marginTop: 20 }}>
-                            <Button mode="contained" icon="cart-outline">
+                            <Button
+                            mode="contained"
+                            icon="cart-outline"
+                            onPress={() => self.props.navigation.navigate('Login')}
+                            >
                                 Finalizar Pedido
                             </Button>
                         </View>

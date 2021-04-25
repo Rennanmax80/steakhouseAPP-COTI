@@ -12,7 +12,7 @@ class Header extends React.Component {
         />
         <Appbar.Action
           icon="account-circle"
-          onPress={() => this.props.navigation.navigate('login')}
+          onPress={() => this.props.navigation.navigate('Login')}
         />
         <Appbar.Action
           icon="cart-outline"

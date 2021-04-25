@@ -1,11 +1,15 @@
 import React, {Component} from 'react';
-import {ScrollView, Text} from 'react-native';
+import {ScrollView} from 'react-native';
+
+import FormRegister from '../components/FormRegister';
+import Header from '../components/Header';
 
 class Register extends React.Component {
   render() {
     return (
       <ScrollView>
-        <Text>Register</Text>
+        <Header navigation={this.props.navigation} />
+        <FormRegister navigation={this.props.navigation} />
       </ScrollView>
     );
   }

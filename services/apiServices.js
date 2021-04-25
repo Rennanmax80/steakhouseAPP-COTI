@@ -3,7 +3,7 @@ import axios from 'axios';
 
 //função publica para retornar o endereço do servidor da API..
 export const getApiUrl = () => {
-    return 'http://apirestaurante-001-site1.itempurl.com';
+    return 'http://apirestaurante2-001-site1.ftempurl.com';
 };
 
 //função para retornar os produtos..
@@ -32,5 +32,28 @@ export const getCategorias = () => {
         );
 };
 
+
+
+//função para realizar uma chamada POST para cadastro de cliente na API
+
+export const postCliente = (cliente) => {
+    return axios.post(getApiUrl() + '/api/cliente', cliente)
+        .then(
+            response => {
+                return response.data;
+            }
+        );
+};
+
+//Para autenticação do cliente na API
+
+export const postLogin = (cliente) => {
+    return axios.post(getApiUrl() + '/api/login', cliente)
+        .then(
+            response => {
+                return response.data;
+            }
+        );
+};
 
 
