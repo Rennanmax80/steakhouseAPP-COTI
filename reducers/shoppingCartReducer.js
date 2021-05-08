@@ -72,6 +72,14 @@ const shoppingCartReducer = (
                 quantidadeItens: (state.quantidadeItens - 1),
               };
 
+              case actions.CLEAR:
+                return {
+                    ...state,
+                    cestaDeCompras: [],
+                    valorTotal: 0,
+                    quantidadeItens: 0,
+                  };
+
 
         default:
             return state;

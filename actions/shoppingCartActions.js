@@ -4,6 +4,7 @@
 */
 export const ADD_ITEM = 'add_item';
 export const REMOVE_ITEM = 'remove_item';
+export const CLEAR = 'clear';
 
 /*
     Criando a função que será disparada na ação
@@ -16,4 +17,8 @@ export const adicionarItem = item => ({
 export const removerItem = item => ({
   type: REMOVE_ITEM,
   data: item,
+});
+
+export const clear = item => ({
+  type: CLEAR,
 });

@@ -56,4 +56,18 @@ export const postLogin = (cliente) => {
         );
 };
 
+//post para finalizar pedido
+export const postPedido = (pedido, accessToken) => {
+    return axios.post(getApiUrl() + '/api/pedido', pedido, {
+        headers: {
+            'Authorization': `Bearer ${accessToken}`,
+        },
+    })
+        .then(
+            response => {
+                return response.data;
+            }
+        );
+};
+
 
